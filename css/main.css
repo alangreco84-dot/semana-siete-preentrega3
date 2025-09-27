@@ -1,0 +1,42 @@
+/*comentario en sass y css */
+nav {
+  width: 400px;
+  height: 300px;
+  color: rgb(215, 255, 71);
+  background-color: rgb(180, 68, 48);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 500px;
+  height: 300px;
+  color: rgb(3, 3, 155);
+}
+main div {
+  color: rgb(235, 35, 0);
+  font-size: 18px;
+  background-color: rgb(83, 54, 54);
+  text-align: center;
+}
+
+.div-ejemplo, footer {
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(235, 86, 59);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+main .div .img-uno {
+  transform: translate(-20px, 100px);
+  transform-origin: center, center;
+}
+
+/*# sourceMappingURL=main.css.map */

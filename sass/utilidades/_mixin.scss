@@ -1,0 +1,25 @@
+
+// con parametros
+
+@mixin medidas($width,$height, $color){
+    width: $width;
+    height: $height;
+    color: $color;
+}
+
+
+// sin parametros
+@mixin flex{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+// hibrido
+
+@mixin pepito($color, $font-size){
+ color: $color;
+ font-size: $font-size;
+ background-color: rgb(83, 54, 54);
+ text-align: center;
+}
+
