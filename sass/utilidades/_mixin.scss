@@ -12,14 +12,14 @@
 @mixin flex{
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: baseline;
 }
 // hibrido
 
 @mixin pepito($color, $font-size){
  color: $color;
  font-size: $font-size;
- background-color: rgb(83, 54, 54);
+ background-color: rgb(80, 83, 54);
  text-align: center;
 }
 

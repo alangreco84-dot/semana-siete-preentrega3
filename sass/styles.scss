@@ -10,16 +10,16 @@
 
     nav{
         @include medidas(400px, 300px, rgb(215, 255, 71));
-        background-color: $color-secundario;
+        background-color: red;
          ul{
           @include flex; 
          }
     }
 
 main{
-    @include medidas(500px, 300px, rgb(3, 3, 155));
+    @include medidas(500px, 300px,red);
     div{
-        @include pepito(rgb(235, 35, 0), 18px);
+        @include pepito(blue, 18px);
     }
 }
 
@@ -27,13 +27,7 @@ main{
 .div-ejemplo{
     text-align: center;
     font-size: 20px;
-    background-color: rgb(235, 86, 59);
-}
-
-footer{
-    @extend .div-ejemplo;
-    display: flex;
-    justify-content: center; 
+    background-color: red;
 }
 
 
