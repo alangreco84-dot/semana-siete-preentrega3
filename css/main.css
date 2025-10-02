@@ -37,7 +37,7 @@ main {
   background-color: red;
 }
 
-main .div .img-uno {
+main .img-uno {
   transform: translate(20px, 100px);
   transform-origin: center, center;
 }
