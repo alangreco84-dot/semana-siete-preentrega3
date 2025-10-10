@@ -9,28 +9,28 @@
 
 
     nav{
-        background-color: $color-secundario;
+        
          ul{
           @include flex; 
-          color: $color-secundario;
+        
          }
-       border-bottom-left-radius: 30px;  
+    
     }
     
 
 main{
-    @include medidas(200px, 300px,rgb(110,110,114));
+    @include medidas(100px, 200px,rgb(110,110,114));
     div{
         @include pepito(rgb(110, 110, 114), 200px);
     }
   border-bottom-left-radius: 30px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  min-height: 200vh;
   grid-template-areas: 
    "img1 img2 img3"
    "img1 img4 img3"
-   "img5 img5 img5";
+   "img5 img5 img6";
 
 }
 
@@ -44,21 +44,30 @@ main{
 
 
 main .img-uno {
-       transform: translate(-10px,100px);
-       transform-origin: center, center;
+      transform: translate(-10px,100px);
+      transform-origin: center,center;
        background-color: $color-secundario;
        display: flex;
-       margin-bottom: 10px;
-       padding: 20%;
+       margin-bottom: 150px;
+       padding: 15%;
  }
-
+main .img-uno:hover{
+    transform: translate(10px,100px);
+    transform-origin: center,center;
+    background-color: $color-principal;
+}
  main .img-dos{
     background-color: $color-secundario;
     transform: translate(-20px,100px);
     transform-origin: center,center;
     display: flex;
-    margin-bottom: 10px;
-    padding: 20%;
+    margin-bottom: 150px;
+    padding: 15%;
+ }
+ main .img-dos:hover{
+    transform: skew(0,15deg);
+    transform-origin: center,center;
+    background-color: $color-principal;
  }
 
  main .img-tres{
@@ -66,8 +75,14 @@ main .img-uno {
     transform: translate(-30px,100px);
     transform-origin: center,center;
     display: grid;
-    margin-bottom: 10px;
-    padding: 20%;
+    margin-bottom: 150px;
+    padding: 15%;
+ }
+
+ main .img-tres:hover{
+    transform: scale(2,1.5);
+    background-color: $color-principal;
+    transform-origin: center,center;
  }
 
 main .img-cuatro{
@@ -75,8 +90,14 @@ main .img-cuatro{
     transform: translate(-40px,100px);
     transform-origin: center,center;
     display: grid;
-    margin-bottom: 20px;
-    padding: 20%;
+    margin-bottom: 150px;
+    padding: 15%;
+    }
+
+main .img-cuatro:hover{
+    transform:translate(-20px,100px);
+    background-color: $color-principal;
+    transform-origin: center,center;
 }
 
 main .img-cinco{
@@ -84,21 +105,44 @@ main .img-cinco{
     transform: translate(-50px,100px);
     transform-origin: center,center;
     display: grid;
-    margin-bottom: 20px;
-    padding: 20%;
+    margin-bottom: 150px;
+    padding: 15%;
+}
+main .img-cinco:hover{
+    rotate: 35deg;
+    border: $color-principal;
+    transform-origin: center,center;
 }
  
+main .img-seis{
+    background-color: $color-secundario;
+    transform: translate(-60px,100px);
+    transform-origin: center, center;
+    display: grid;
+    margin-bottom: 150px;
+    padding: 15%;
+}
+main .img-seis:hover{
+      rotate: 45deg;
+      background-color: $color-principal;
+      transform-origin: center,center;
+    
+}
+
+
+
+ 
  footer{
-    background-color: $color-principal;
+    background-color: $color-secundario;
     text-align: center;
-    bottom: 10px;
-    padding: 20%, 0;
+    bottom: 15px;
+    padding: 100%, 0;
     width: 100%;
     margin-bottom: 10px;
-    min-height: 10vh;
-    margin-top: 150px;
+    min-height: 15vh;
+    margin-top: 15px;
     display: grid;
-    border-bottom-left-radius: 30px;
+    
  }
 
   
