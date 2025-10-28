@@ -32,100 +32,100 @@ main {
 }
 
 main .img-uno {
-  transform: translate(-10px, 100px);
-  transform-origin: center, center;
+  transform-origin: center center;
   background-color: rgba(3, 203, 253, 0.938);
   display: flex;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 15%;
+  width: 100px;
 }
 
 main .img-uno:hover {
   transform: translate(10px, 100px);
-  transform-origin: center, center;
-  background-color: rgb(255, 251, 251);
+  transform-origin: center center;
+  border: 2px solid rgb(255, 251, 251);
 }
 
 main .img-dos {
   background-color: rgba(3, 203, 253, 0.938);
-  transform: translate(-20px, 100px);
-  transform-origin: center, center;
+  transform-origin: center center;
   display: flex;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 15%;
+  width: 100px;
 }
 
 main .img-dos:hover {
-  transform: skew(0, 15deg);
-  transform-origin: center, center;
-  background-color: rgb(255, 251, 251);
+  transform: skew(-20deg);
+  transform-origin: center center;
+  border: 2px solid rgb(255, 251, 251);
 }
 
 main .img-tres {
   background-color: rgba(3, 203, 253, 0.938);
-  transform: translate(-30px, 100px);
-  transform-origin: center, center;
+  transform-origin: center center;
   display: grid;
   margin-bottom: 150px;
   padding: 15%;
+  width: 100px;
 }
 
 main .img-tres:hover {
-  transform: scale(2, 1.5);
-  background-color: rgb(255, 251, 251);
-  transform-origin: center, center;
+  transform: translate(-30px, 100px) scale(2, 1.5);
+  transform-origin: center center;
+  border: 2px solid rgb(255, 251, 251);
 }
 
 main .img-cuatro {
   background-color: rgba(3, 203, 253, 0.938);
-  transform: translate(-40px, 100px);
-  transform-origin: center, center;
+  transform-origin: center center;
   display: grid;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 15%;
+  width: 100px;
 }
 
 main .img-cuatro:hover {
   transform: translate(-20px, 100px);
-  background-color: rgb(255, 251, 251);
-  transform-origin: center, center;
+  transform-origin: center center;
+  border: 2px solid rgb(255, 251, 251);
 }
 
 main .img-cinco {
   background-color: rgba(3, 203, 253, 0.938);
-  transform: translate(-50px, 100px);
-  transform-origin: center, center;
+  transform-origin: center center;
   display: grid;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 15%;
+  width: 100px;
 }
 
 main .img-cinco:hover {
-  rotate: 35deg;
-  border: rgb(255, 251, 251);
-  transform-origin: center, center;
+  transform: translate(-50px, 100px) rotate(35deg);
+  border: 2px solid rgb(255, 251, 251);
+  transform-origin: center center;
 }
 
 main .img-seis {
   background-color: rgba(3, 203, 253, 0.938);
-  transform: translate(-60px, 100px);
-  transform-origin: center, center;
+  transform-origin: center center;
   display: grid;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   padding: 15%;
+  width: 100px;
 }
 
 main .img-seis:hover {
-  rotate: 45deg;
-  background-color: rgb(255, 251, 251);
-  transform-origin: center, center;
+  transform: translate(30px, 100px) rotate(-10deg);
+  transform-origin: center center;
+  border: 2px solid rgb(255, 251, 251);
 }
 
 footer {
   background-color: rgba(3, 203, 253, 0.938);
   text-align: center;
   bottom: 15px;
-  padding: 100%, 0;
+  padding: 10%;
   width: 100%;
   margin-bottom: 10px;
   min-height: 15vh;

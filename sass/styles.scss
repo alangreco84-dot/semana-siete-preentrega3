@@ -4,7 +4,7 @@
 //IMPORT
 
 @use "utilidades/variables" as *;
-@use "utilidades/mixin"as*; 
+@use "utilidades/mixin"as *; 
 //nesting
 
 
@@ -44,106 +44,101 @@ main{
 
 
 main .img-uno {
-      transform: translate(-10px,100px);
-      transform-origin: center,center;
+      transform-origin: center center;
        background-color: $color-secundario;
        display: flex;
-       margin-bottom: 150px;
+       margin-bottom: 100px;
        padding: 15%;
+       width: 100px;
  }
 main .img-uno:hover{
     transform: translate(10px,100px);
-    transform-origin: center,center;
-    background-color: $color-principal;
+    transform-origin: center center;
+    border: 2px solid $color-principal;
+    
 }
  main .img-dos{
     background-color: $color-secundario;
-    transform: translate(-20px,100px);
-    transform-origin: center,center;
+    transform-origin: center center;
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     padding: 15%;
+    width: 100px;
  }
  main .img-dos:hover{
-    transform: skew(0,15deg);
-    transform-origin: center,center;
-    background-color: $color-principal;
+    transform:skew(-20deg);
+    transform-origin: center center;
+    border: 2px solid $color-principal;
+    
  }
 
  main .img-tres{
     background-color: $color-secundario;
-    transform: translate(-30px,100px);
-    transform-origin: center,center;
+    transform-origin: center center;
     display: grid;
     margin-bottom: 150px;
     padding: 15%;
+    width: 100px;
  }
 
  main .img-tres:hover{
-    transform: scale(2,1.5);
-    background-color: $color-principal;
-    transform-origin: center,center;
+    transform: translate(-30px,100px)scale(2,1.5);
+    transform-origin: center center;
+    border: 2px solid $color-principal;
  }
 
 main .img-cuatro{
     background-color: $color-secundario;
-    transform: translate(-40px,100px);
-    transform-origin: center,center;
+    transform-origin: center center;
     display: grid;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     padding: 15%;
+    width: 100px;
     }
 
 main .img-cuatro:hover{
     transform:translate(-20px,100px);
-    background-color: $color-principal;
-    transform-origin: center,center;
+    transform-origin: center center;
+    border: 2px solid $color-principal;
 }
 
 main .img-cinco{
     background-color: $color-secundario;
-    transform: translate(-50px,100px);
-    transform-origin: center,center;
+    transform-origin: center center;
     display: grid;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     padding: 15%;
+    width: 100px;
 }
 main .img-cinco:hover{
-    rotate: 35deg;
-    border: $color-principal;
-    transform-origin: center,center;
+    transform: translate(-50px,100px)rotate(35deg);
+    border: 2px solid $color-principal;
+    transform-origin: center center;
+    
 }
  
 main .img-seis{
     background-color: $color-secundario;
-    transform: translate(-60px,100px);
-    transform-origin: center, center;
+    transform-origin: center center;
     display: grid;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     padding: 15%;
+    width: 100px;
 }
 main .img-seis:hover{
-      rotate: 45deg;
-      background-color: $color-principal;
-      transform-origin: center,center;
-    
+     transform: translate(30px,100px)rotate(-10deg);
+      transform-origin: center center; 
+      border: 2px solid $color-principal;
 }
 
-
-
- 
- footer{
+footer{
     background-color: $color-secundario;
     text-align: center;
     bottom: 15px;
-    padding: 100%, 0;
+    padding: 10%;
     width: 100%;
     margin-bottom: 10px;
     min-height: 15vh;
     margin-top: 15px;
     display: grid;
-    
  }
-
-  
-    
