@@ -1,6 +1,6 @@
 /*comentario en sass y css */
 nav ul {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -13,15 +13,13 @@ main {
 }
 main div {
   color: rgb(0, 174, 255);
-  font-size: 200px;
-  background-color: rgb(0, 174, 255);
   text-align: center;
 }
 main {
-  border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 100px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 200vh;
+  min-height: 100vh;
   grid-template-areas: "img1 img2 img3" "img1 img4 img3" "img5 img5 img6";
 }
 
@@ -36,7 +34,7 @@ main .img-uno {
   background-color: rgba(3, 203, 253, 0.938);
   display: flex;
   margin-bottom: 100px;
-  padding: 15%;
+  padding: 20%;
   width: 100px;
 }
 
@@ -51,7 +49,7 @@ main .img-dos {
   transform-origin: center center;
   display: flex;
   margin-bottom: 100px;
-  padding: 15%;
+  padding: 20%;
   width: 100px;
 }
 
@@ -65,8 +63,8 @@ main .img-tres {
   background-color: rgba(3, 203, 253, 0.938);
   transform-origin: center center;
   display: grid;
-  margin-bottom: 150px;
-  padding: 15%;
+  margin-bottom: 100px;
+  padding: 20%;
   width: 100px;
 }
 
@@ -112,7 +110,7 @@ main .img-seis {
   display: grid;
   margin-bottom: 100px;
   padding: 15%;
-  width: 100px;
+  width: 50px;
 }
 
 main .img-seis:hover {
@@ -124,12 +122,10 @@ main .img-seis:hover {
 footer {
   background-color: rgba(3, 203, 253, 0.938);
   text-align: center;
-  bottom: 15px;
-  padding: 10%;
+  padding: 20% 0%;
   width: 100%;
-  margin-bottom: 10px;
-  min-height: 15vh;
-  margin-top: 15px;
+  height: 10px;
+  min-height: 10px;
   display: grid;
 }
 

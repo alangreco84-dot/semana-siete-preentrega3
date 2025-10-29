@@ -19,14 +19,14 @@
     
 
 main{
-    @include medidas(100px, 200px,rgb(110,110,114));
+    @include medidas($width:100% ,$height:100px, $color:rgb(0,174,255));
     div{
-        @include pepito(rgb(110, 110, 114), 200px);
+        @include pepito($color:rgb(0,174,255));
     }
-  border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 100px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 200vh;
+  min-height: 100vh;
   grid-template-areas: 
    "img1 img2 img3"
    "img1 img4 img3"
@@ -48,36 +48,34 @@ main .img-uno {
        background-color: $color-secundario;
        display: flex;
        margin-bottom: 100px;
-       padding: 15%;
+       padding: 20%;
        width: 100px;
  }
 main .img-uno:hover{
     transform: translate(10px,100px);
     transform-origin: center center;
     border: 2px solid $color-principal;
-    
 }
  main .img-dos{
     background-color: $color-secundario;
     transform-origin: center center;
     display: flex;
     margin-bottom: 100px;
-    padding: 15%;
+    padding: 20%;
     width: 100px;
  }
  main .img-dos:hover{
     transform:skew(-20deg);
     transform-origin: center center;
     border: 2px solid $color-principal;
-    
  }
 
  main .img-tres{
     background-color: $color-secundario;
     transform-origin: center center;
     display: grid;
-    margin-bottom: 150px;
-    padding: 15%;
+    margin-bottom: 100px;
+    padding: 20%;
     width: 100px;
  }
 
@@ -85,6 +83,7 @@ main .img-uno:hover{
     transform: translate(-30px,100px)scale(2,1.5);
     transform-origin: center center;
     border: 2px solid $color-principal;
+    
  }
 
 main .img-cuatro{
@@ -114,7 +113,6 @@ main .img-cinco:hover{
     transform: translate(-50px,100px)rotate(35deg);
     border: 2px solid $color-principal;
     transform-origin: center center;
-    
 }
  
 main .img-seis{
@@ -123,7 +121,7 @@ main .img-seis{
     display: grid;
     margin-bottom: 100px;
     padding: 15%;
-    width: 100px;
+    width: 50px;
 }
 main .img-seis:hover{
      transform: translate(30px,100px)rotate(-10deg);
@@ -134,11 +132,9 @@ main .img-seis:hover{
 footer{
     background-color: $color-secundario;
     text-align: center;
-    bottom: 15px;
-    padding: 10%;
+    padding: 20% 0%;
     width: 100%;
-    margin-bottom: 10px;
-    min-height: 15vh;
-    margin-top: 15px;
+    height: 10px;
+    min-height: 10px;
     display: grid;
  }
